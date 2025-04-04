@@ -12,8 +12,8 @@ pytest>=7.3.1
 pytest-cov>=4.1.0
 
 # Optional dependencies for advanced features
-
+#Uncomment if needed
 nltk>=3.8.1
 scikit-learn>=1.2.2
 pandas>=2.0.0
-https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.7.1/en_core_web_lg-3.7.1-py3-none-any.whl
+streamlit

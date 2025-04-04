@@ -6,36 +6,44 @@ import os
 import json
 import streamlit as st
 from app.parser.resume_parser import ResumeParser
-
+from io import BytesIO
 st.title("📄 Resume Parser")
+
+import tempfile
 
 def process_resume(uploaded_file, output_format='json'):
     """Process a single uploaded resume file"""
     try:
-        resume_parser = ResumeParser(uploaded_file)
+        # Create a temporary file to save the uploaded resume
+        with tempfile.NamedTemporaryFile(delete=False, suffix=os.path.splitext(uploaded_file.name)[1]) as temp_file:
+            temp_file.write(uploaded_file.read())
+            temp_file_path = temp_file.name  # Get the temp file path
+
+        # Pass the temporary file path to ResumeParser
+        resume_parser = ResumeParser(temp_file_path)
         parsed_data = resume_parser.parse()
+
+        # Cleanup temp file
+        os.remove(temp_file_path)
 
         if parsed_data:
             st.success("✅ Resume parsed successfully!")
             if output_format == 'json':
                 st.subheader("Parsed Data (JSON Format)")
                 st.json(parsed_data)
-
-                # Download button for JSON
                 json_str = json.dumps(parsed_data, indent=4)
                 st.download_button("Download JSON", json_str, file_name="parsed_resume.json", mime="application/json")
-
-            else:  # txt
+            else:
                 st.subheader("Parsed Data (Text Format)")
                 txt_output = generate_txt_output(parsed_data)
                 st.text(txt_output)
-
                 st.download_button("Download TXT", txt_output, file_name="parsed_resume.txt", mime="text/plain")
-
         else:
             st.error("❌ Failed to parse resume.")
+
     except Exception as e:
         st.error(f"⚠️ Error while processing resume: {str(e)}")
+
 
 def generate_txt_output(parsed_data):
     """Return parsed data in text format"""
