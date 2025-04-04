@@ -17,3 +17,6 @@ nltk>=3.8.1
 scikit-learn>=1.2.2
 pandas>=2.0.0
 streamlit
+ResumeParser
+convert_resume_to_text
+PdfReader
