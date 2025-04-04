@@ -16,7 +16,8 @@ pytest-cov>=4.1.0
 nltk>=3.8.1
 scikit-learn>=1.2.2
 pandas>=2.0.0
-streamlit
-ResumeParser
-convert_resume_to_text
 PdfReader
+streamlit>=1.44.1
+python-docx>=0.8.11
+
+rich>=14.0.0
