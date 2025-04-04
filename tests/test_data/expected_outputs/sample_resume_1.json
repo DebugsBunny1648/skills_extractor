@@ -1,0 +1,56 @@
+{
+    "file_name": "sample_resume_1.pdf",
+    "skills": [
+        "AMCAT Certi\ufb01ed Software Development Trainee",
+        "C / C++ Competencies",
+        "Collaboration",
+        "Collaboration, Quick-Learner, Excellent analytical and Logical thinking CERTIFICATION Certi\ufb01ed Application Developer",
+        "Data Structures",
+        "Database Management Soft Skills",
+        "Learner",
+        "Object Oriented Programming",
+        "SKILLS Languages",
+        "SQL(MySQL",
+        "Service",
+        "c",
+        "css",
+        "git",
+        "html",
+        "java",
+        "javascript",
+        "mysql",
+        "python",
+        "sql"
+    ],
+    "experience": [
+        {
+            "job_title": "\u2022  Earned 20+ certi\ufb01cations and collaborated with 100+ developers, solving real-world challenges. Oasis Infobyte Frontend Development Intern",
+            "company": "Detection",
+            "dates": "March 2023 \u2013 April 2023",
+            "responsibilities": [
+                "Contributed to 10+ open-source projects on GitHub during Hacktoberfest, implementing 5+ features, resolving 15+ bugs, and improving documentation for 3+ repositories.",
+                "Collaborated with a global community to successfully complete 20+ pull requests,enhancing project functionality. Google Cloud Ready Program Facilitator June 2022 \u2013 Sept. 2022",
+                "Developed a cloud-based application using Google Cloud App Engine , Cloud Storage, and Firestore.",
+                "Earned 20+ certi\ufb01cations and collaborated with 100+ developers, solving real-world challenges. Oasis Infobyte Frontend Development Intern March 2023 \u2013 April 2023",
+                "Developed and maintained 15+ responsive web pages using HTML, CSS, JavaScript, and React, ensuring a user-friendly design and integrating 5+ APIs for dynamic data.",
+                "Applied best practices in clean code, e\ufb03cient work\ufb02ows, and Git version control. PROJECTS Brick Break Game",
+                "Developed game mechanics and logic in Java, enhancing gameplay with 3 components.",
+                "Applied OOP to create modular code, reducing development time by 30%. Implementing AI Driven Threat Detection",
+                "Developed and deployed AI models, reducing false positives by 30% and improving threat detection speed.",
+                "Analyzed data streams, increasing detection accuracy by 25% and reducing latency by 20%. PriceWizard: E-commerce Price Comparison Tool",
+                "Built a real-time price comparison tool with Scrapy, boosting user e\ufb03ciency by 30% across 50+ retailers.",
+                "Deployed MongoDB as the back-end, optimizing data retrieval time by 40%. SKILLS Languages :Java, Python, HTML , CSS, JavaScript, SQL(MySQL), Git, C / C++ Competencies : Data Structures, Object Oriented Programming, Database Management Soft Skills : Collaboration, Quick-Learner, Excellent analytical and Logical thinking CERTIFICATION Certi\ufb01ed Application Developer by Service Now AMCAT Certi\ufb01ed Software Development Trainee"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "degree": "Bachelor of Technology",
+            "institution": "Institute of Technical Education and Research Bachelor of Technology in Computer Science and Engineering",
+            "graduation_date": "June 2022",
+            "gpa": null
+        }
+    ],
+    "certifications": [],
+    "projects": []
+}

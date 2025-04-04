@@ -1,0 +1,18 @@
+# Core dependencies
+spacy>=3.4.0
+pdfminer.six>=20221105
+docx2txt>=0.8
+python-docx>=0.8.11
+
+# NLP model - install with: python -m spacy download en_core_web_lg
+# (this is handled separately since it's a model, not a package)
+
+# Testing libraries
+pytest>=7.3.1
+pytest-cov>=4.1.0
+
+# Optional dependencies for advanced features
+
+nltk>=3.8.1
+scikit-learn>=1.2.2
+pandas>=2.0.0
